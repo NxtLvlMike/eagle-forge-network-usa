@@ -14,10 +14,10 @@ const CTASection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-white text-military-red hover:bg-white/90 py-6 px-8 text-lg">
+          <Button className="bg-white text-military-red hover:bg-white/90 py-6 px-8 text-lg font-bold">
             Register Now
           </Button>
-          <Button variant="outline" className="border-white text-white hover:bg-white/10 py-6 px-8 text-lg">
+          <Button variant="outline" className="border-white text-white hover:bg-white/10 py-6 px-8 text-lg font-bold">
             Learn More
           </Button>
         </div>

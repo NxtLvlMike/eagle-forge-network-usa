@@ -31,10 +31,10 @@ const Navbar = () => {
         </div>
         
         <div className="flex gap-2 mt-4 sm:mt-0">
-          <Button variant="outline" className="text-white border-white hover:bg-white hover:text-military-navy">
+          <Button variant="outline" className="text-white border-white hover:bg-white hover:text-military-navy text-sm font-bold">
             Login
           </Button>
-          <Button className="bg-military-red hover:bg-military-red/90">
+          <Button className="bg-military-red hover:bg-military-red/90 text-sm font-bold">
             Register
           </Button>
         </div>

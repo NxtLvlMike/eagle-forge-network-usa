@@ -1,5 +1,6 @@
 
 import Footer from "@/components/Footer";
+import MindBridgeGallery from "@/components/MindBridgeGallery";
 import Navbar from "@/components/Navbar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -18,23 +19,33 @@ const MindBridge = () => {
           ></div>
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto">
-              <Badge className="mb-4 bg-military-red">Advanced Neural Technology</Badge>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 eagle-title">
-                MIND BRIDGE: Neural Hive Mind for Military Operations
-              </h1>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <Badge className="mb-4 bg-military-red">Advanced Neural Technology</Badge>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 eagle-title">
+                  MIND BRIDGE: Neural Hive Mind for Military Operations
+                </h1>
+                
+                <p className="text-xl mb-8 leading-relaxed">
+                  A revolutionary Brain-Computer Interface (BCI) system enabling direct neural communication between soldiers, creating a tactical "hive mind" that dramatically enhances battlefield coordination and operational efficiency.
+                </p>
+                
+                <div className="flex flex-wrap gap-4">
+                  <Button className="bg-military-red hover:bg-military-red/90 font-bold">
+                    <Brain className="mr-2 h-5 w-5" /> Learn More
+                  </Button>
+                  <Button variant="outline" className="border-white text-white hover:bg-white/10 font-bold">
+                    Request Demo
+                  </Button>
+                </div>
+              </div>
               
-              <p className="text-xl mb-8 leading-relaxed">
-                A revolutionary Brain-Computer Interface (BCI) system enabling direct neural communication between soldiers, creating a tactical "hive mind" that dramatically enhances battlefield coordination and operational efficiency.
-              </p>
-              
-              <div className="flex flex-wrap gap-4">
-                <Button className="bg-military-red hover:bg-military-red/90">
-                  <Brain className="mr-2 h-5 w-5" /> Learn More
-                </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                  Request Demo
-                </Button>
+              <div className="flex justify-center">
+                <img 
+                  src="/lovable-uploads/68bb2bcd-5d64-46b7-b7e2-b5b60fec2d77.png" 
+                  alt="Combat Helmet with HoloLens Integration" 
+                  className="max-w-full rounded-lg shadow-lg border-2 border-military-silver/30"
+                />
               </div>
             </div>
           </div>
@@ -87,6 +98,9 @@ const MindBridge = () => {
             </div>
           </div>
         </section>
+
+        {/* Gallery Section with the uploaded images */}
+        <MindBridgeGallery />
 
         {/* Technical Architecture */}
         <section className="py-16">
@@ -142,6 +156,19 @@ const MindBridge = () => {
                       <span>Deep learning models for thought pattern recognition and intent classification</span>
                     </li>
                   </ul>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <img 
+                    src="/lovable-uploads/244fc21f-2e43-42d3-8ba9-b8d6885a5fc8.png" 
+                    alt="AR Glasses Components" 
+                    className="rounded-lg shadow-md h-72 w-full object-cover border border-gray-200"
+                  />
+                  <img 
+                    src="/lovable-uploads/055fb0ae-f387-4b4f-bcd1-e57158d58f8e.png" 
+                    alt="Military VR Training" 
+                    className="rounded-lg shadow-md h-72 w-full object-cover border border-gray-200"
+                  />
                 </div>
                 
                 <div>
@@ -338,10 +365,10 @@ const MindBridge = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-white text-military-red hover:bg-white/90 py-6 px-8 text-lg">
+              <Button className="bg-white text-military-red hover:bg-white/90 py-6 px-8 text-lg font-bold">
                 Request Demo
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 py-6 px-8 text-lg">
+              <Button variant="outline" className="border-white text-white hover:bg-white/10 py-6 px-8 text-lg font-bold">
                 Partnership Information
               </Button>
             </div>
