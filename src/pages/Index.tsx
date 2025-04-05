@@ -55,7 +55,7 @@ const Index = () => {
               
               <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md lg:col-span-1 md:col-span-2">
                 <img 
-                  src="/lovable-uploads/8c1ec8f0-2c61-426a-9d81-c9a21beafef0.png" 
+                  src="/lovable-uploads/74dea0d6-de3c-4510-9bc5-ca04cced7710.png" 
                   alt="Brain EEG Monitoring" 
                   className="w-full h-64 object-cover object-top"
                 />

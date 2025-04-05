@@ -1,3 +1,4 @@
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Rocket } from "lucide-react";
@@ -78,7 +79,7 @@ const TechnologySection = () => {
                 className="rounded-md w-full h-40 object-cover shadow-md"
               />
               <img 
-                src="/lovable-uploads/8c1ec8f0-2c61-426a-9d81-c9a21beafef0.png"
+                src="/lovable-uploads/74dea0d6-de3c-4510-9bc5-ca04cced7710.png"
                 alt="EEG Electrode Placement" 
                 className="rounded-md w-full h-40 object-cover shadow-md"
               />
