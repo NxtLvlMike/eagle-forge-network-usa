@@ -4,8 +4,8 @@ import FeaturesSection from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import Navbar from "@/components/Navbar";
+import RevolutionaryTechSection from "@/components/RevolutionaryTechSection";
 import TechnologySection from "@/components/TechnologySection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -69,7 +69,7 @@ const Index = () => {
           </div>
         </section>
         
-        <TestimonialsSection />
+        <RevolutionaryTechSection />
         <CTASection />
       </main>
       <Footer />
