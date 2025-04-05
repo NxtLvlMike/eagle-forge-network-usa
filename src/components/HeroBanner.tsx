@@ -27,7 +27,7 @@ const HeroBanner = () => {
                 Join the Network
               </Button>
               
-              <Button variant="outline" className="military-btn border-white text-white hover:bg-white/10 py-6 font-bold">
+              <Button variant="outline" className="military-btn border-white text-military-navy hover:bg-white hover:text-military-navy py-6 font-bold">
                 Learn More About EFN-USA
               </Button>
             </div>
