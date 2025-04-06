@@ -23,7 +23,7 @@ const Navbar = () => {
             About
           </Link>
           <Link to="/mind-bridge" className="text-white hover:text-military-silver transition-colors duration-200">
-            Mind Bridge
+            Mind-Bridge
           </Link>
           <Link to="/contact" className="text-white hover:text-military-silver transition-colors duration-200">
             Contact

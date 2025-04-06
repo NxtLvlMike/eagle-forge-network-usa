@@ -69,6 +69,62 @@ const Index = () => {
           </div>
         </section>
         
+        {/* Funding Call To Action Section */}
+        <section className="py-16 bg-military-red/10">
+          <div className="container mx-auto px-4">
+            <Badge className="mb-4 mx-auto block w-fit bg-military-red">Urgent Funding Appeal</Badge>
+            <h2 className="text-3xl font-bold text-center mb-6 eagle-title">
+              Support the Mission to Make America Great Again
+            </h2>
+            
+            <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-4 text-center">Help Michael Sacks Rally the Troops</h3>
+                <p className="text-gray-700 mb-6 text-center">
+                  Your donation will directly fund travel costs and operational expenses as Michael Sacks prepares to leave 
+                  South Africa and embark on the crucial mission of Making America Great Again with revolutionary BCI technology.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                  <div className="bg-gray-50 p-6 rounded-lg text-center border border-gray-200 hover:border-military-red transition-colors">
+                    <h4 className="font-bold text-xl mb-2">$100</h4>
+                    <p className="text-sm text-gray-600 mb-4">Supporter</p>
+                    <Button className="w-full bg-military-navy hover:bg-military-navy/90">
+                      Contribute
+                    </Button>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg text-center border-2 border-military-red shadow-lg transform scale-105">
+                    <span className="inline-block px-2 py-1 bg-military-red text-white text-xs rounded-full mb-2">Recommended</span>
+                    <h4 className="font-bold text-xl mb-2">$500</h4>
+                    <p className="text-sm text-gray-600 mb-4">Patriot Sponsor</p>
+                    <Button className="w-full bg-military-red hover:bg-military-red/90">
+                      Contribute
+                    </Button>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg text-center border border-gray-200 hover:border-military-red transition-colors">
+                    <h4 className="font-bold text-xl mb-2">$1,000+</h4>
+                    <p className="text-sm text-gray-600 mb-4">Visionary Investor</p>
+                    <Button className="w-full bg-military-navy hover:bg-military-navy/90">
+                      Contribute
+                    </Button>
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <p className="italic text-sm text-gray-500 mb-4">
+                    "With your support, we can bring this revolutionary technology to America and change the world." - Michael Sacks
+                  </p>
+                  <Button size="lg" className="bg-military-red hover:bg-military-red/90 text-white font-bold px-8">
+                    Make A Custom Donation
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
         {/* Visionary Leadership Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
