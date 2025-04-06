@@ -69,6 +69,39 @@ const Index = () => {
           </div>
         </section>
         
+        {/* Video Showcase Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <Badge className="mb-4 mx-auto block w-fit bg-military-red">Video Presentation</Badge>
+            <h2 className="text-3xl font-bold text-center mb-8 eagle-title">
+              See Our Technology In Action
+            </h2>
+            <p className="text-center text-gray-700 max-w-3xl mx-auto mb-10">
+              Watch our detailed presentation on how Brain-Computer Interface technology 
+              is revolutionizing military training and combat capabilities.
+            </p>
+            
+            <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
+              <div className="aspect-w-16 aspect-h-9 relative">
+                <iframe 
+                  className="w-full h-[500px] md:h-[550px]"
+                  src="https://www.youtube.com/embed/bwSycrvcwAs?si=52IVkxDdXef0huiI" 
+                  title="Brain-Computer Interface Technology"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+            
+            <div className="mt-12 text-center">
+              <Button className="bg-military-navy hover:bg-military-navy/90 text-white font-bold px-8 py-3">
+                Explore More Videos
+              </Button>
+            </div>
+          </div>
+        </section>
+        
         <RevolutionaryTechSection />
         <CTASection />
       </main>
