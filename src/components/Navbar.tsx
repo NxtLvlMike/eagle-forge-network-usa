@@ -25,6 +25,9 @@ const Navbar = () => {
           <Link to="/mind-bridge" className="text-white hover:text-military-silver transition-colors duration-200">
             Mind-Bridge
           </Link>
+          <Link to="/sax-defense" className="text-white hover:text-military-silver transition-colors duration-200">
+            SAX Defense
+          </Link>
           <Link to="/contact" className="text-white hover:text-military-silver transition-colors duration-200">
             Contact
           </Link>
