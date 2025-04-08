@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { MessageSquare } from "lucide-react";
+import { MessageSquare, MapPin, Mail, Phone, User } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -17,7 +17,7 @@ const Contact = () => {
             <MessageSquare className="h-16 w-16 text-military-red mx-auto mb-4" />
             <h1 className="text-4xl font-bold mb-4 eagle-title">Contact Us</h1>
             <p className="max-w-2xl mx-auto text-lg text-gray-300">
-              Get in touch with the Eagle Forge Network team
+              Get in touch with the SAX Defense team
             </p>
           </div>
         </div>
@@ -27,7 +27,7 @@ const Contact = () => {
             <div>
               <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
               <p className="mb-6 text-gray-700">
-                Have questions about membership, training programs, or how to get involved? 
+                Have questions about our technology, defense systems, or investment opportunities? 
                 We're here to help. Fill out the form and our team will get back to you as soon as possible.
               </p>
               
@@ -74,43 +74,62 @@ const Contact = () => {
               <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
               
               <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-8">
-                <h3 className="font-bold text-lg mb-4">Headquarters</h3>
-                <p className="text-gray-700 mb-1">1234 Military Avenue</p>
-                <p className="text-gray-700 mb-1">Suite 500</p>
-                <p className="text-gray-700 mb-4">Washington, DC 20001</p>
+                <div className="flex items-start space-x-3 mb-4">
+                  <User className="h-5 w-5 text-military-red mt-0.5" />
+                  <div>
+                    <h3 className="font-bold text-lg">CEO</h3>
+                    <p className="text-gray-700">Michael Sacks</p>
+                  </div>
+                </div>
                 
-                <p className="text-gray-700 mb-1">
-                  <span className="font-semibold">Email:</span> info@eagleforge-network.usa
-                </p>
-                <p className="text-gray-700">
-                  <span className="font-semibold">Phone:</span> (202) 555-1234
-                </p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-8">
-                <h3 className="font-bold text-lg mb-4">Training Facility</h3>
-                <p className="text-gray-700 mb-1">5678 Tactical Road</p>
-                <p className="text-gray-700 mb-1">Building B</p>
-                <p className="text-gray-700 mb-4">Fort Worth, TX 76101</p>
+                <div className="flex items-start space-x-3 mb-4">
+                  <Phone className="h-5 w-5 text-military-red mt-0.5" />
+                  <div>
+                    <h3 className="font-bold text-lg">Cell Number</h3>
+                    <p className="text-gray-700">+27697933038</p>
+                  </div>
+                </div>
                 
-                <p className="text-gray-700 mb-1">
-                  <span className="font-semibold">Email:</span> training@eagleforge-network.usa
-                </p>
-                <p className="text-gray-700">
-                  <span className="font-semibold">Phone:</span> (817) 555-5678
-                </p>
+                <div className="flex items-start space-x-3 mb-4">
+                  <Mail className="h-5 w-5 text-military-red mt-0.5" />
+                  <div>
+                    <h3 className="font-bold text-lg">Email</h3>
+                    <p className="text-gray-700">info@agiautomation.co.za</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-military-red mt-0.5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2c-2.8 0-5 2.2-5 5v3h10V7c0-2.8-2.2-5-5-5Z" />
+                    <path d="M17 10H7v11h10V10Z" />
+                  </svg>
+                  <div>
+                    <h3 className="font-bold text-lg">Website</h3>
+                    <p className="text-gray-700">www.agent-q.ai</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <MapPin className="h-5 w-5 text-military-red mt-0.5" />
+                  <div>
+                    <h3 className="font-bold text-lg">Company Address</h3>
+                    <p className="text-gray-700">122 Ranger Road</p>
+                    <p className="text-gray-700">Fish Hoek</p>
+                    <p className="text-gray-700">Cape Town</p>
+                    <p className="text-gray-700">Western Cape</p>
+                    <p className="text-gray-700">South Africa</p>
+                    <p className="text-gray-700">7975</p>
+                  </div>
+                </div>
               </div>
               
               <div className="bg-military-navy text-white p-6 rounded-lg">
-                <h3 className="font-bold text-lg mb-4">Membership Inquiries</h3>
+                <h3 className="font-bold text-lg mb-4">Important Notice</h3>
                 <p className="mb-4">
-                  Interested in joining the Eagle Forge Network? Contact our membership team directly:
-                </p>
-                <p className="mb-1">
-                  <span className="font-semibold">Email:</span> join@eagleforge-network.usa
+                  SAX Defense is currently exploring options to relocate our headquarters to the United States of America.
                 </p>
                 <p>
-                  <span className="font-semibold">Phone:</span> (202) 555-9876
+                  We are in the process of evaluating strategic locations that will best support our mission to provide cutting-edge defense technologies and enhance our global partnerships.
                 </p>
               </div>
             </div>
