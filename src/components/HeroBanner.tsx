@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Rocket } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroBanner = () => {
   return (
@@ -22,14 +23,18 @@ const HeroBanner = () => {
             </p>
             
             <div className="grid sm:grid-cols-2 gap-4 max-w-md mx-auto md:mx-0">
-              <Button className="military-btn bg-military-red border-military-red hover:bg-military-red/90 text-white py-6 flex items-center justify-center font-bold">
-                <Rocket className="mr-2 h-5 w-5" />
-                Join the Network
-              </Button>
+              <Link to="/nwo">
+                <Button className="military-btn bg-military-red border-military-red hover:bg-military-red/90 text-white py-6 flex items-center justify-center font-bold w-full">
+                  <Rocket className="mr-2 h-5 w-5" />
+                  Join the Network
+                </Button>
+              </Link>
               
-              <Button variant="outline" className="military-btn border-white text-military-navy hover:bg-white hover:text-military-navy py-6 font-bold">
-                Learn More About EFN-USA
-              </Button>
+              <Link to="/about">
+                <Button variant="outline" className="military-btn border-white text-white bg-transparent hover:bg-white hover:text-military-navy py-6 font-bold w-full">
+                  Learn More About EFN-USA
+                </Button>
+              </Link>
             </div>
           </div>
           

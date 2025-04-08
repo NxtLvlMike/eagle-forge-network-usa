@@ -12,6 +12,7 @@ import NotFound from "./pages/NotFound";
 import MindBridge from "./pages/MindBridge";
 import SaxDefense from "./pages/SaxDefense";
 import NWO from "./pages/NWO";
+import LearnAI from "./pages/LearnAI";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/mind-bridge" element={<MindBridge />} />
           <Route path="/sax-defense" element={<SaxDefense />} />
           <Route path="/nwo" element={<NWO />} />
+          <Route path="/learn-ai" element={<LearnAI />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

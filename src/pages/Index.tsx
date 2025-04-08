@@ -8,8 +8,12 @@ import RevolutionaryTechSection from "@/components/RevolutionaryTechSection";
 import TechnologySection from "@/components/TechnologySection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "@/hooks/use-toast";
 
 const Index = () => {
+  const navigate = useNavigate();
+  
   const handleDonation = (amount: string) => {
     // Redirect to PayPal with the specified amount
     const paypalEmail = "info@agiautomation.co.za";
@@ -17,6 +21,10 @@ const Index = () => {
     const paypalUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${encodeURIComponent(paypalEmail)}&item_name=${encodeURIComponent(donationDescription)}&amount=${amount}&currency_code=USD`;
     
     window.open(paypalUrl, '_blank');
+    toast({
+      title: "Thank you for your support!",
+      description: `Your donation of $${amount} will help support our mission.`,
+    });
   };
 
   return (
@@ -45,7 +53,9 @@ const Index = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Combat AR Integration</h3>
                   <p className="text-gray-600 mb-4">Military-grade Augmented Reality system integrated with tactical combat helmet for enhanced battlefield awareness.</p>
-                  <Button className="w-full bg-military-navy hover:bg-military-navy/90 text-white font-bold">View Specifications</Button>
+                  <Link to="/mind-bridge">
+                    <Button className="w-full bg-military-navy hover:bg-military-navy/90 text-white font-bold">View Specifications</Button>
+                  </Link>
                 </div>
               </div>
               
@@ -58,7 +68,9 @@ const Index = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Tactical VR Training</h3>
                   <p className="text-gray-600 mb-4">Immersive Virtual Reality training systems for simulated combat scenarios with neural monitoring feedback.</p>
-                  <Button className="w-full bg-military-navy hover:bg-military-navy/90 text-white font-bold">Training Programs</Button>
+                  <Link to="/sax-defense">
+                    <Button className="w-full bg-military-navy hover:bg-military-navy/90 text-white font-bold">Training Programs</Button>
+                  </Link>
                 </div>
               </div>
               
@@ -71,7 +83,9 @@ const Index = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">BrainAccess EEG System</h3>
                   <p className="text-gray-600 mb-4">AI-enabled electroencephalography and brain-computer interface technology with military-grade specifications.</p>
-                  <Button className="w-full bg-military-navy hover:bg-military-navy/90 text-white font-bold">Technical Details</Button>
+                  <Link to="/mind-bridge">
+                    <Button className="w-full bg-military-navy hover:bg-military-navy/90 text-white font-bold">Technical Details</Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -194,9 +208,11 @@ const Index = () => {
                 </div>
                 
                 <div className="mt-8">
-                  <Button className="bg-military-red hover:bg-military-red/90 text-white font-bold px-8 py-3">
-                    Investor Relations
-                  </Button>
+                  <Link to="/nwo">
+                    <Button className="bg-military-red hover:bg-military-red/90 text-white font-bold px-8 py-3">
+                      Investor Relations
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
