@@ -37,6 +37,7 @@ const Footer = () => {
                 <li><Link to="/mind-bridge" className="text-gray-300 hover:text-white">Mind-Bridge</Link></li>
                 <li><Link to="/sax-defense" className="text-gray-300 hover:text-white">SAX Defense</Link></li>
                 <li><Link to="/nwo" className="text-gray-300 hover:text-white">NWO</Link></li>
+                <li><Link to="/anduril" className="text-gray-300 hover:text-white">Anduril</Link></li>
               </ul>
             </div>
             
