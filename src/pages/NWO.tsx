@@ -7,6 +7,15 @@ import { ArrowRight, Brain, Globe, Shield, Star, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const NWO = () => {
+  const handleDonation = () => {
+    // Redirect to PayPal
+    const paypalEmail = "info@agiautomation.co.za";
+    const donationDescription = "NWO Initiative Support";
+    const paypalUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${encodeURIComponent(paypalEmail)}&item_name=${encodeURIComponent(donationDescription)}&currency_code=USD`;
+    
+    window.open(paypalUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -22,7 +31,10 @@ const NWO = () => {
               technological advancement and innovation in America
             </p>
             <div className="flex justify-center gap-4">
-              <Button className="bg-military-red hover:bg-military-red/90">
+              <Button 
+                className="bg-military-red hover:bg-military-red/90"
+                onClick={handleDonation}
+              >
                 Join the Movement
               </Button>
               <Button variant="outline" className="text-white border-white hover:bg-white/10">
@@ -147,7 +159,10 @@ const NWO = () => {
                   ))}
                 </ul>
                 
-                <Button className="bg-military-red hover:bg-military-red/90 mt-4">
+                <Button 
+                  className="bg-military-red hover:bg-military-red/90 mt-4"
+                  onClick={handleDonation}
+                >
                   Apply for The First 500 <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
@@ -260,7 +275,10 @@ const NWO = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-military-red hover:bg-military-red/90">
+              <Button 
+                className="bg-military-red hover:bg-military-red/90"
+                onClick={handleDonation}
+              >
                 Apply Now
               </Button>
               <Link to="/contact">

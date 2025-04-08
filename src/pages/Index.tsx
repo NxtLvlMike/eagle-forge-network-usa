@@ -10,6 +10,15 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
+  const handleDonation = (amount: string) => {
+    // Redirect to PayPal with the specified amount
+    const paypalEmail = "info@agiautomation.co.za";
+    const donationDescription = "Eagle Forge Network Donation";
+    const paypalUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${encodeURIComponent(paypalEmail)}&item_name=${encodeURIComponent(donationDescription)}&amount=${amount}&currency_code=USD`;
+    
+    window.open(paypalUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -89,7 +98,10 @@ const Index = () => {
                   <div className="bg-gray-50 p-6 rounded-lg text-center border border-gray-200 hover:border-military-red transition-colors">
                     <h4 className="font-bold text-xl mb-2">$100</h4>
                     <p className="text-sm text-gray-600 mb-4">Supporter</p>
-                    <Button className="w-full bg-military-navy hover:bg-military-navy/90">
+                    <Button 
+                      className="w-full bg-military-navy hover:bg-military-navy/90"
+                      onClick={() => handleDonation("100.00")}
+                    >
                       Contribute
                     </Button>
                   </div>
@@ -98,7 +110,10 @@ const Index = () => {
                     <span className="inline-block px-2 py-1 bg-military-red text-white text-xs rounded-full mb-2">Recommended</span>
                     <h4 className="font-bold text-xl mb-2">$500</h4>
                     <p className="text-sm text-gray-600 mb-4">Patriot Sponsor</p>
-                    <Button className="w-full bg-military-red hover:bg-military-red/90">
+                    <Button 
+                      className="w-full bg-military-red hover:bg-military-red/90"
+                      onClick={() => handleDonation("500.00")}
+                    >
                       Contribute
                     </Button>
                   </div>
@@ -106,7 +121,10 @@ const Index = () => {
                   <div className="bg-gray-50 p-6 rounded-lg text-center border border-gray-200 hover:border-military-red transition-colors">
                     <h4 className="font-bold text-xl mb-2">$1,000+</h4>
                     <p className="text-sm text-gray-600 mb-4">Visionary Investor</p>
-                    <Button className="w-full bg-military-navy hover:bg-military-navy/90">
+                    <Button 
+                      className="w-full bg-military-navy hover:bg-military-navy/90"
+                      onClick={() => handleDonation("1000.00")}
+                    >
                       Contribute
                     </Button>
                   </div>
@@ -116,7 +134,16 @@ const Index = () => {
                   <p className="italic text-sm text-gray-500 mb-4">
                     "With your support, we can bring this revolutionary technology to America and change the world." - Michael Sacks
                   </p>
-                  <Button size="lg" className="bg-military-red hover:bg-military-red/90 text-white font-bold px-8">
+                  <Button 
+                    size="lg" 
+                    className="bg-military-red hover:bg-military-red/90 text-white font-bold px-8"
+                    onClick={() => {
+                      const amount = prompt("Enter custom donation amount in USD:", "100.00");
+                      if (amount && !isNaN(parseFloat(amount))) {
+                        handleDonation(amount);
+                      }
+                    }}
+                  >
                     Make A Custom Donation
                   </Button>
                 </div>
