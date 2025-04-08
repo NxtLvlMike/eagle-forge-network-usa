@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import MindBridge from "./pages/MindBridge";
 import SaxDefense from "./pages/SaxDefense";
+import NWO from "./pages/NWO";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/mind-bridge" element={<MindBridge />} />
           <Route path="/sax-defense" element={<SaxDefense />} />
+          <Route path="/nwo" element={<NWO />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
