@@ -15,7 +15,9 @@ const HeroBanner = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 eagle-title tracking-tight leading-tight">
-              <span className="text-military-red">MAKE AMERICA GREAT AGAIN</span>
+              <span className="text-white">Let us</span><br />
+              <span className="text-blue-500">MAKE AMERICA</span><br />
+              <span className="text-military-red">GREAT AGAIN</span>
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 leading-relaxed">

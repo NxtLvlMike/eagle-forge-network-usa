@@ -42,7 +42,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/sax-defense" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
-                SAX Defense
+                Defense
               </Link>
             </li>
             <li>
@@ -62,12 +62,12 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/crypto-czar" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
-                Crypto cZAR
+                Crypto
               </Link>
             </li>
             <li>
               <Link to="/learn-ai" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
-                Learn AI
+                AI Skills
               </Link>
             </li>
             <li>
