@@ -15,6 +15,7 @@ import NWO from "./pages/NWO";
 import LearnAI from "./pages/LearnAI";
 import Anduril from "./pages/Anduril";
 import MicrosoftMilitary from "./pages/MicrosoftMilitary";
+import CryptoCzar from "./pages/CryptoCzar";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/learn-ai" element={<LearnAI />} />
           <Route path="/anduril" element={<Anduril />} />
           <Route path="/microsoft-military" element={<MicrosoftMilitary />} />
+          <Route path="/crypto-czar" element={<CryptoCzar />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

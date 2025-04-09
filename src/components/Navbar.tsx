@@ -41,6 +41,9 @@ const Navbar = () => {
           <Link to="/microsoft-military" className="text-white hover:text-military-silver transition-colors duration-200">
             Microsoft Military
           </Link>
+          <Link to="/crypto-czar" className="text-white hover:text-military-silver transition-colors duration-200">
+            Crypto cZAR AI
+          </Link>
           <Link to="/learn-ai" className="text-white hover:text-military-silver transition-colors duration-200">
             Learn AI
           </Link>
