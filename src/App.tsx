@@ -14,6 +14,7 @@ import SaxDefense from "./pages/SaxDefense";
 import NWO from "./pages/NWO";
 import LearnAI from "./pages/LearnAI";
 import Anduril from "./pages/Anduril";
+import MicrosoftMilitary from "./pages/MicrosoftMilitary";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/nwo" element={<NWO />} />
           <Route path="/learn-ai" element={<LearnAI />} />
           <Route path="/anduril" element={<Anduril />} />
+          <Route path="/microsoft-military" element={<MicrosoftMilitary />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
