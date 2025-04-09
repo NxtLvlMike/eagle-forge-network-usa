@@ -32,7 +32,7 @@ const HeroBanner = () => {
               
               <Link to="/about">
                 <Button variant="outline" className="military-btn border-white text-white bg-transparent hover:bg-white hover:text-military-navy py-6 font-bold w-full">
-                  Learn More About EFN-USA
+                  Learn More About SAX CORP
                 </Button>
               </Link>
             </div>

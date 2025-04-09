@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Shield } from "lucide-react";
+import { Ruler, Square } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,46 +10,72 @@ const Navbar = () => {
         <div className="flex items-center mb-4 sm:mb-0">
           <Link to="/">
             <div className="flex items-center">
-              <Shield className="h-8 w-8 text-military-red mr-2" />
-              <span className="text-2xl font-bold eagle-title">Eagle Forge Network</span>
+              <Square className="h-8 w-8 text-military-red mr-2" strokeWidth={1.5}>
+                <Ruler className="h-5 w-5 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" strokeWidth={1.5} />
+              </Square>
+              <span className="text-2xl font-bold eagle-title">SAX CORP</span>
             </div>
           </Link>
         </div>
         
-        <div className="flex flex-wrap justify-center gap-2">
-          <Link to="/" className="text-white hover:text-military-silver transition-colors duration-200">
-            Home
-          </Link>
-          <Link to="/members" className="text-white hover:text-military-silver transition-colors duration-200">
-            Members
-          </Link>
-          <Link to="/about" className="text-white hover:text-military-silver transition-colors duration-200">
-            About
-          </Link>
-          <Link to="/mind-bridge" className="text-white hover:text-military-silver transition-colors duration-200">
-            Mind-Bridge
-          </Link>
-          <Link to="/sax-defense" className="text-white hover:text-military-silver transition-colors duration-200">
-            SAX Defense
-          </Link>
-          <Link to="/nwo" className="text-white hover:text-military-silver transition-colors duration-200">
-            NWO
-          </Link>
-          <Link to="/anduril" className="text-white hover:text-military-silver transition-colors duration-200">
-            Anduril
-          </Link>
-          <Link to="/microsoft-military" className="text-white hover:text-military-silver transition-colors duration-200">
-            Microsoft Military
-          </Link>
-          <Link to="/crypto-czar" className="text-white hover:text-military-silver transition-colors duration-200">
-            Crypto cZAR AI
-          </Link>
-          <Link to="/learn-ai" className="text-white hover:text-military-silver transition-colors duration-200">
-            Learn AI
-          </Link>
-          <Link to="/contact" className="text-white hover:text-military-silver transition-colors duration-200">
-            Contact
-          </Link>
+        <div className="flex items-center justify-center">
+          <ul className="flex flex-wrap gap-1 md:gap-3 rounded-lg bg-military-navy/80 p-1 shadow-inner">
+            <li>
+              <Link to="/" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/members" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                Members
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                About
+              </Link>
+            </li>
+            <li className="relative group">
+              <Link to="/mind-bridge" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                Mind-Bridge
+              </Link>
+            </li>
+            <li>
+              <Link to="/sax-defense" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                SAX Defense
+              </Link>
+            </li>
+            <li>
+              <Link to="/nwo" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                NWO
+              </Link>
+            </li>
+            <li>
+              <Link to="/anduril" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                Anduril
+              </Link>
+            </li>
+            <li>
+              <Link to="/microsoft-military" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                Microsoft
+              </Link>
+            </li>
+            <li>
+              <Link to="/crypto-czar" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                Crypto cZAR
+              </Link>
+            </li>
+            <li>
+              <Link to="/learn-ai" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                Learn AI
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+                Contact
+              </Link>
+            </li>
+          </ul>
         </div>
         
         <div className="flex gap-2 mt-4 sm:mt-0">
