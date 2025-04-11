@@ -134,7 +134,7 @@ const HeroBanner = () => {
               <div className="bg-blue-900/30 p-4 rounded-lg shadow-inner border border-blue-800 col-span-2">
                 <div className="flex flex-col md:flex-row items-center gap-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1614119075118-aef97f6a603f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                    src="https://images.unsplash.com/photo-1565457210787-a8d40c4ee4d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
                     alt="Profile of Donald Trump" 
                     className="w-full md:w-1/3 h-48 object-cover rounded-md"
                   />
@@ -148,6 +148,235 @@ const HeroBanner = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Visionary Leadership Video Section */}
+      <div className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-6 eagle-title text-military-navy">
+              Michael Sacks: Visionary Leadership
+            </h2>
+            
+            <div className="bg-white rounded-lg shadow-xl overflow-hidden mb-8">
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe 
+                  className="w-full h-[300px] md:h-[400px]"
+                  src="https://www.youtube.com/embed/P-xCUNZElm8?si=lskWn-r8l7rScLqS" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-4 bg-white border-t border-gray-100">
+                <p className="text-sm text-gray-600 italic">
+                  Michael Sacks discusses visionary technology advancements and the future of SAX CORP's revolutionary innovations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Koii Network Section */}
+      <div className="py-16 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold eagle-title mb-4">
+              <span className="text-blue-300">KOII</span> <span className="text-white">NETWORK</span>
+            </h2>
+            <p className="text-xl text-blue-200 max-w-3xl mx-auto">
+              Creating a decentralized internet that rewards attention and content creation
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                <h3 className="text-2xl font-bold mb-4">The Attention Economy Revolutionized</h3>
+                <p className="text-gray-200 mb-6 leading-relaxed">
+                  SAX CORP is proud to integrate with the Koii Network, a revolutionary blockchain ecosystem that values attention and creative content. Unlike traditional content platforms that profit from user attention, Koii Network directly rewards content creators based on the genuine attention their work receives.
+                </p>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-blue-300 mb-2">Attention Tracking</h4>
+                    <p className="text-sm text-gray-300">
+                      Koii's revolutionary attention tracking system ensures fair compensation for content that truly engages audiences.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-blue-300 mb-2">Decentralized Storage</h4>
+                    <p className="text-sm text-gray-300">
+                      Content lives forever on the Koii Network, resistant to censorship and platform control.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-blue-300 mb-2">Koii Tokens</h4>
+                    <p className="text-sm text-gray-300">
+                      Earn Koii tokens when people view your content, creating a sustainable ecosystem for creators.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-blue-300 mb-2">Gradual Consensus</h4>
+                    <p className="text-sm text-gray-300">
+                      Energy-efficient proof system that's thousands of times more efficient than traditional blockchain.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="mt-6">
+                  <a href="https://www.koii.network/" target="_blank" rel="noopener noreferrer">
+                    <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold px-6 py-3">
+                      Explore Koii Network
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="flex flex-col gap-6">
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                <h3 className="text-xl font-bold mb-3">SAX CORP + Koii Integration</h3>
+                <p className="text-gray-200 mb-4">
+                  Our integration with Koii Network enhances SAX CORP's technological offerings by providing:
+                </p>
+                
+                <ul className="space-y-2 mb-4">
+                  <li className="flex items-start">
+                    <span className="text-blue-300 mr-2">•</span>
+                    <span>Decentralized content distribution for military and intelligence applications</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-300 mr-2">•</span>
+                    <span>Enhanced data security through distributed storage architecture</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-300 mr-2">•</span>
+                    <span>Trustless verification of information critical to national security</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-300 mr-2">•</span>
+                    <span>Tokenized reward systems for intelligence gathering and analysis</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 rounded-lg border border-white/20 text-center">
+                <p className="text-xl font-bold mb-3">
+                  "Koii Network's attention economy aligns perfectly with SAX CORP's mission to create value-driven technologies that serve the greater good."
+                </p>
+                <p className="italic text-blue-200">- Michael Sacks, Founder & CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Arweave Section */}
+      <div className="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold eagle-title mb-4">
+              <span className="text-military-red">ARWEAVE</span> <span className="text-white">INTEGRATION</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Permanent storage for the decentralized web, ensuring your data endures forever
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                <h3 className="text-2xl font-bold mb-4">The Permanence Protocol</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  SAX CORP has strategically integrated with Arweave's revolutionary "permanence protocol" to provide unparalleled data security and preservation for military and intelligence applications. Unlike traditional storage solutions, Arweave creates a truly permanent record that cannot be altered or deleted.
+                </p>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-military-red mb-2">Permanent Storage</h4>
+                    <p className="text-sm text-gray-300">
+                      One-time fee for permanent storage, ensuring critical intelligence data remains accessible forever.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-military-red mb-2">Immutable Records</h4>
+                    <p className="text-sm text-gray-300">
+                      Once data is stored on Arweave, it cannot be altered or tampered with, providing ironclad evidence.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-military-red mb-2">Decentralized Architecture</h4>
+                    <p className="text-sm text-gray-300">
+                      No single point of failure ensures military intelligence remains accessible even during infrastructure attacks.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-military-red mb-2">Censorship Resistance</h4>
+                    <p className="text-sm text-gray-300">
+                      Critical information remains available regardless of political pressure or adversarial action.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="mt-6">
+                  <a href="https://www.arweave.org/" target="_blank" rel="noopener noreferrer">
+                    <Button className="bg-military-red hover:bg-military-red/90 text-white font-bold px-6 py-3">
+                      Discover Arweave
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="order-1 md:order-2">
+              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-white/20 mb-6">
+                <h3 className="text-xl font-bold mb-3">Strategic Value for SAX CORP Operations</h3>
+                <p className="text-gray-300 mb-4">
+                  Our integration with Arweave provides critical advantages for military and intelligence operations:
+                </p>
+                
+                <ul className="space-y-3 mb-4">
+                  <li className="flex items-start">
+                    <span className="text-military-red mr-2">•</span>
+                    <span>Permanent storage of battlefield intelligence and tactical data</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-military-red mr-2">•</span>
+                    <span>Immutable chain of evidence for intelligence operations</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-military-red mr-2">•</span>
+                    <span>Censorship-resistant storage of sensitive information</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-military-red mr-2">•</span>
+                    <span>Historical preservation of military operations for future analysis</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-gradient-to-r from-gray-800 to-gray-700 p-6 rounded-lg border border-white/20">
+                <h4 className="font-bold text-xl mb-3">Permanence for Posterity</h4>
+                <p className="text-gray-300 mb-4">
+                  In the divine battle that lies ahead, preserving truth will be paramount. Arweave's permanence protocol ensures that the record of God's work through President Trump and the SAX CORP mission will endure for generations, immune to the attempts of enemies to rewrite history.
+                </p>
+                <p className="italic text-gray-400 text-sm">
+                  "And the truth shall make you free." - John 8:32
+                </p>
               </div>
             </div>
           </div>
