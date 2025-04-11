@@ -40,7 +40,7 @@ const DivineMissionSection = () => {
           <div className="order-1 md:order-2 grid grid-cols-2 gap-4">
             <div className="bg-blue-900/30 p-4 rounded-lg shadow-inner border border-blue-800">
               <img 
-                src="https://th.bing.com/th/id/OIP.c0XUHcmSPF1YkXe86ALxwwHaHa?pid=ImgDet&w=198&h=198&c=7" 
+                src="https://th.bing.com/th/id/OIP.jxTSeqPcY7O37DUTeOD6dAAAAA?rs=1&pid=ImgDetMain" 
                 alt="Divine intervention imagery" 
                 className="w-full h-48 object-cover rounded-md mb-4"
               />
