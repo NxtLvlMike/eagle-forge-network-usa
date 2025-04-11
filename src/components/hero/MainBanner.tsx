@@ -41,12 +41,19 @@ const MainBanner = () => {
           </div>
           
           <div className="flex justify-center">
-            <img 
-              src="/lovable-uploads/ae98c665-d6eb-4aea-a154-166a3cc33f58.png" 
-              alt="Advanced Military Combat Helmet" 
-              className="max-w-full rounded-lg shadow-lg border-2 border-military-silver/30"
-              style={{ maxHeight: '400px' }}
-            />
+            <div className="w-full max-w-full rounded-lg shadow-lg border-2 border-military-silver/30 overflow-hidden">
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/kjroSxDryNM?si=-S-V5o8py4LGE1Hn" 
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+                className="w-full aspect-video"
+              ></iframe>
+            </div>
           </div>
         </div>
         
