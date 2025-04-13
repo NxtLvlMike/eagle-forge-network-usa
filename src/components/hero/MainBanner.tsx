@@ -43,8 +43,8 @@ const MainBanner = () => {
           <div className="flex justify-center">
             <div className="w-full max-w-full rounded-lg shadow-lg border-2 border-military-silver/30 overflow-hidden">
               <iframe 
-                width="560" 
-                height="315" 
+                width="640" 
+                height="360" 
                 src="https://www.youtube.com/embed/kjroSxDryNM?si=-S-V5o8py4LGE1Hn" 
                 title="YouTube video player" 
                 frameBorder="0" 
