@@ -1,8 +1,9 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import KoiiNetworkSection from "@/components/hero/KoiiNetworkSection";
+import ArweaveSection from "@/components/hero/ArweaveSection";
 import { ArrowRight, Brain, Globe, Shield, Star, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -289,6 +290,12 @@ const NWO = () => {
             </div>
           </div>
         </div>
+        
+        {/* KOII Network Section */}
+        <KoiiNetworkSection />
+        
+        {/* Arweave Integration Section */}
+        <ArweaveSection />
       </main>
       
       <Footer />
