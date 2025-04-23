@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { Ruler, Square } from "lucide-react";
+import { Ruler, Square, Briefcase, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -27,7 +26,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/members" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
-                Members
+                Careers
               </Link>
             </li>
             <li>
@@ -79,6 +78,15 @@ const Navbar = () => {
         </div>
         
         <div className="flex gap-2 mt-4 sm:mt-0">
+          <a 
+            href="https://wa.me/27697933038" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md transition-colors"
+          >
+            <Phone className="h-4 w-4" />
+            <span className="text-sm font-bold">WhatsApp</span>
+          </a>
           <Button variant="outline" className="text-military-navy bg-white border-white hover:bg-white/90 hover:text-military-navy text-sm font-bold">
             Login
           </Button>

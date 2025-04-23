@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,7 +5,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
-import Members from "./pages/Members";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import MindBridge from "./pages/MindBridge";
@@ -16,6 +14,7 @@ import LearnAI from "./pages/LearnAI";
 import Anduril from "./pages/Anduril";
 import MicrosoftMilitary from "./pages/MicrosoftMilitary";
 import CryptoCzar from "./pages/CryptoCzar";
+import Careers from "./pages/Careers";
 
 const queryClient = new QueryClient();
 
@@ -28,7 +27,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
-          <Route path="/members" element={<Members />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mind-bridge" element={<MindBridge />} />
           <Route path="/sax-defense" element={<SaxDefense />} />
