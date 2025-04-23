@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Ruler, Square, Briefcase, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -25,7 +26,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/members" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
+              <Link to="/careers" className="block px-3 py-2 text-sm rounded-md hover:bg-white/10 transition-colors duration-200">
                 Careers
               </Link>
             </li>

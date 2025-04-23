@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { 
-  Briefcase, Users, Megaphone, Medkit, Military, Brush, Calculator,
-  UserRound, UserPlus, Book, Code, Cpu, Gamepad, Brain, GraduationCap,
-  Hospital, WhatsApp
+  Briefcase, Users, Megaphone, Stethoscope, Shield, 
+  Brush, Calculator, UserRound, UserPlus, Book, Code, 
+  Cpu, Gamepad, Brain, GraduationCap, Heart, Phone
 } from "lucide-react";
 
 const Careers = () => {
@@ -16,10 +16,10 @@ const Careers = () => {
     { id: "recruitment", label: "Recruitment", icon: Users },
     { id: "management", label: "Management", icon: Briefcase },
     { id: "pr", label: "Public Relations", icon: Megaphone },
-    { id: "medical", label: "Medical Doctors", icon: Medkit },
-    { id: "police", label: "Police Officers", icon: Users },
-    { id: "nurses", label: "Nurses", icon: Hospital },
-    { id: "military", label: "Military", icon: Military },
+    { id: "medical", label: "Medical Doctors", icon: Stethoscope },
+    { id: "police", label: "Police Officers", icon: Shield },
+    { id: "nurses", label: "Nurses", icon: Heart },
+    { id: "military", label: "Military", icon: Shield },
     { id: "creative", label: "Creative", icon: Brush },
     { id: "accounting", label: "Accountants", icon: Calculator },
     { id: "senior", label: "Senior Management", icon: UserRound },
@@ -30,7 +30,7 @@ const Careers = () => {
     { id: "gaming", label: "Gamers", icon: Gamepad },
     { id: "gamedev", label: "Game Developers", icon: Code },
     { id: "neuro", label: "Neuroscientists", icon: Brain },
-    { id: "soldiers", label: "Soldiers", icon: Military },
+    { id: "soldiers", label: "Soldiers", icon: Shield },
     { id: "electrical", label: "Electrical Engineers", icon: Briefcase },
     { id: "mechanical", label: "Mechanical Engineers", icon: Briefcase }
   ];
@@ -55,7 +55,7 @@ const Careers = () => {
               onClick={handleWhatsAppContact}
               className="mt-6 bg-green-500 hover:bg-green-600 gap-2"
             >
-              <WhatsApp className="h-5 w-5" />
+              <Phone className="h-5 w-5" />
               Contact via WhatsApp
             </Button>
           </div>
@@ -91,7 +91,7 @@ const Careers = () => {
                     onClick={handleWhatsAppContact}
                     className="bg-green-500 hover:bg-green-600 gap-2"
                   >
-                    <WhatsApp className="h-5 w-5" />
+                    <Phone className="h-5 w-5" />
                     Inquire About {category.label} Positions
                   </Button>
                 </div>
